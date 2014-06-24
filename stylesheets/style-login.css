@@ -1,0 +1,16 @@
+body.login {background: #FAFAFA;}
+
+.login form {
+    background:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    color: #696969;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {background: none;border:1px solid #696969; color:#696969; }
+body.login div#login form#loginform p.submit input#wp-submit:hover { background: #d3d3d3;}
+
+body.login div#login p#nav, body.login div#login p#backtoblog {text-align: center; }
+body.login div#login p#nav a:hover, body.login div#login p#backtoblog a:hover {text-decoration: underline; }
+
+body.login div#login p#nav a, body.login div#login p#backtoblog a{color: #696969;}

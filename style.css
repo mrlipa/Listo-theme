@@ -1,0 +1,13 @@
+/*
+Theme Name:     Listo Theme
+Theme URI:      http://www.lis.to/
+Description:    A starter child theme for PageLines DMS 2.  Use for the amazing website for innovation.
+Author: 		Gabriel Zambrano 
+Author URI:     http://www.sevinci.com
+Template:       dms
+Version:        0.1.0
+*/
+@import url("../dms/style.css");
+@import url("../../themes/Listo-theme/stylesheets/listo-styles.css");
+
+

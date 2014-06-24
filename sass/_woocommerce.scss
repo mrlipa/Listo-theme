@@ -1,0 +1,53 @@
+.woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li {
+  border: 0;
+  background: #fafafa;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fafafa),to(#fafafa));
+  background: -webkit-linear-gradient(#fafafa,#fafafa);
+  background: -moz-linear-gradient(center top,#fafafa 0%,#fafafa 100%);
+  background: -moz-gradient(center top,#fafafa 0%,#fafafa 100%);
+  z-index: 0;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 0 0px 0px rgba(0,0,0,0), inset 0 0px 0 rgba(0,0,0,0);
+  margin: 0 -5px;
+  padding: 0 1em;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li:before, .woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce #content div.product .woocommerce-tabs ul.tabs li:before, .woocommerce #content div.product .woocommerce-tabs ul.tabs li:after, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:before, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:after, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:before, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:after {
+  border: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active {
+  background: #fafafa;
+  z-index: 0;
+  border-bottom-color: #fafafa;
+}
+
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page #content input.button.alt{
+  background: $listo-color;
+  color: #ffffff;
+  text-shadow: 0;
+}
+
+.woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover{
+  background: $listo-color;
+  color: #ffffff;
+  text-shadow: 0;
+}
+
+.woocommerce span.onsale, .woocommerce-page span.onsale{
+  top:-95px;
+  z-index:1000;
+  background: $listo-color;
+}
+
+.woocommerce .related ul li.product img, .woocommerce .related ul.products li.product img, .woocommerce-page .related ul li.product img, .woocommerce-page .related ul.products li.product img{
+  max-width:226px;
+  max-height:226px;
+}
+
+.woocommerce .woocommerce-product-rating .star-rating, .woocommerce-page .woocommerce-product-rating .star-rating{text-align:right;float:right;}
+
+.woocommerce-review-link {clear:right; display:block;}

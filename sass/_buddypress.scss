@@ -1,0 +1,41 @@
+#buddypress{
+  background:#FAFAFA;
+  position:relative;
+  z-index:2;
+  #item-header{text-align:center;}
+
+  div.item-list-tabs ul li{
+    float:none;
+
+  }
+  #item-nav ul{
+    overflow: hidden;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+  }
+  a{color: grey;}
+
+  #item-nav{
+    li{border-top: 1px solid grey;margin-right:10px;}
+    li:last-Child{border-bottom: 1px solid grey;}
+  }
+  div.item-list-tabs#subnav {
+    margin: 0px 0 10px;
+    overflow: hidden;
+    li{float:left;}
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+
+  #item-body{float:left; display:inline; width:100%}
+  #activity-filter-select{display:none;}
+  .submit{background:none;border:0;}
+  #item-header-avatar img{
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+  }
+}
