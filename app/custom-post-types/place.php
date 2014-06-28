@@ -26,7 +26,7 @@ function places_post_type(){
         'publicly_queryable'=> true,
         'show_ui'           => true,
         'query_var'         => true,
-        'menu_icon'         => '',
+        'menu_icon'         => 'dashicons-admin-site',
         'rewrite'           => true,
         'capability_type'   => 'post',
         'hierarchical'      => false,
@@ -39,18 +39,3 @@ function places_post_type(){
 }
 
 ?>
-
-
-<?php
- 
-function add_menu_icons_styles(){
-?>
- 
-<style>
-
-</style>
- 
-<?php
-}
-add_action( 'admin_head', 'add_menu_icons_styles' );
-
