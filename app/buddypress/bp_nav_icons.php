@@ -13,5 +13,4 @@ function my_picto(){
 
     $bp->bp_nav['profile']['position'] = 0;
 }
-
 ?>
