@@ -1,7 +1,7 @@
 <style>
     #map_canvas {
         width: 100%;
-        height: 400px;
+        height: 500px;
     }
 </style>
 
@@ -11,20 +11,14 @@
     function initialize() {
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-            center: new google.maps.LatLng(44.5403, -78.5463),
-            zoom: 8,
+            center: new google.maps.LatLng(17.000, 0.000),
+            zoom: 2,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(map_canvas, map_options)
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-
-<?php
-
-echo "My visited places";
-
-?>
 
 <div id="map_canvas"></div>
 
@@ -35,3 +29,9 @@ echo "My visited places";
     <input type="submit" value="Submit" class="submit" />
 </form>
 <div id="map-canvas"></div>
+
+<?php
+
+echo "My visited places";
+
+?>

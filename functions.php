@@ -12,9 +12,15 @@ include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/login.php');
 
 // Buddypress
 include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_nav_icons.php');
-include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_challenges.php');
+
+// To be activated when challenges are ready
+//include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_challenges.php');
+
 include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_woo_adresse.php');
-include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_favorites.php');
+
+//To be activated when favorites is ready
+//include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_favorites.php');
+
 include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_places.php');
 
 include_once(ABSPATH . 'wp-content/themes/Listo-theme/js/javascript.php');

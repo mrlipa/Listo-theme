@@ -2,7 +2,7 @@
 .section-navbar .navbar.pl-color-base {
   font-weight: bold;
 }
-/* line 4, ../sass/_menu.scss */
+/* line 3, ../sass/_menu.scss */
 .section-navbar .navbar.pl-color-base a {
   text-transform: uppercase;
 }
@@ -27,14 +27,14 @@
 /* line 8, ../sass/_search.scss */
 .yith-ajaxsearchform-container input[type="search"]#yith-s {
   height: 30px;
-  width: 90%;
+  width: 86%;
   border: 1px solid #B9B9B9;
   margin-bottom: 0;
 }
 /* line 9, ../sass/_search.scss */
 .yith-ajaxsearchform-container input[type="submit"]#yith-searchsubmit {
   height: 28px;
-  width: 6%;
+  width: 10%;
   border: 1px solid #B9B9B9;
   color: #b9b9b9;
   font-weight: bold;
@@ -322,4 +322,21 @@ li.widget_product_categories .product-categories li:hover > .children {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
+}
+/* line 42, ../sass/_buddypress.scss */
+#buddypress #signup_form .submit:active, #buddypress #account-delete-form .submit:active, #buddypress #profile-edit-form .submit:active {
+  border: 0;
+  box-shadow: none;
+}
+/* line 47, ../sass/_buddypress.scss */
+#buddypress #notifications-sort-order {
+  display: none;
+}
+/* line 48, ../sass/_buddypress.scss */
+#buddypress #members-order-select {
+  display: none;
+}
+/* line 51, ../sass/_buddypress.scss */
+#buddypress #whats-new-form #whats-new-options {
+  height: 50px  !important;
 }
