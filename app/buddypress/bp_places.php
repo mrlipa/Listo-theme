@@ -51,7 +51,7 @@ function my_visited_places_nav(){
 }
 
 function bp_listo_visited_places_screen() {
-    add_action( 'bp_template_title', 'bp_listo_visited_places_screen_title' );
+    //add_action( 'bp_template_title', 'bp_listo_visited_places_screen_title' );
     add_action( 'bp_template_content', 'bp_listo_visited_places_screen_content' );
     bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
 }
