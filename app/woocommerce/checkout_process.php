@@ -235,5 +235,3 @@ function my_custom_checkout_field_order_meta_keys( $keys ) {
 
 
 ?>
-
-?>
