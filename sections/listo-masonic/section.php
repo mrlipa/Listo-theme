@@ -277,23 +277,24 @@ class PLMasonicListo extends PageLinesSection {
 			}
 		}*/
 
-		$region_cat_ID  = 15;
-		$ocasion_cat_ID = 24; 
-		$cadre_cat_ID   = 34;
-		$season_cat_ID  = 29;
+        foreach($list as $l){
+            switch ($l->name) {
+                case "Region":
+                    $region_cat_ID = $l->cat_ID;
+                    break;
+                case "Cadre":
+                    $cadre_cat_ID = $l->cat_ID;
+                    break;
+                case "Season":
+                    $season_cat_ID = $l->cat_ID;
+                    break;
+                case "Occasion":
+                    $occasion_cat_ID = $l->cat_ID;
+                    break;
+            }
+        }
 
 		$default_title = ( $this->opt('default_title') ) ? $this->opt('default_title') : 'All';
-
-        ?>
-        <div id="accordion">
-            <div class="panel-defautl">
-                <div class="panel-heading center">
-                    <b>VOIR OFFRES</b><br>
-<!--                    <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse" id="collapse-icon"><i class="fa fa-angle-double-down"></i></a>-->
-                    <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse" id="collapse-icon"><i class="fa fa-plus"></i></a>
-                </div><!-- .panel-heading -->
-                <div id="collapseOne" class="panel-collapse collapse">
-        <?php
 
 
         if(!empty($posts)) {
@@ -309,8 +310,8 @@ class PLMasonicListo extends PageLinesSection {
                         <ul class="masonic-nav-listo inline-list">
                             <div class="row">
                                 <div class="span4 listo-cat-region">
-                                    <?php $categories_child_region = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => 15)); ?>
-                                    <span class="center listo-category-header"><b><?php echo $list[2]->name; ?></b></span>
+                                    <?php $categories_child_region = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => $region_cat_ID)); ?>
+                                    <span class="listo-category-header"><b><?php echo $list[2]->name; ?></b></span>
                                     <div class="button-group" data-filter-group="<?php echo $list[2]->name; ?>">
                                         <?php
                                         foreach ($categories_child_region as $key => $region) {
@@ -320,8 +321,8 @@ class PLMasonicListo extends PageLinesSection {
                                     </div>
                                 </div>
                                 <div class="span4 listo-cat-ocasion">
-                                    <?php $categories_child_ocasion = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => 24)); ?>
-                                    <span class="center listo-category-header"><b><?php echo $list[1]->name; ?></b></span>
+                                    <?php $categories_child_ocasion = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => $occasion_cat_ID)); ?>
+                                    <span class="listo-category-header"><b><?php echo $list[1]->name; ?></b></span>
                                     <div class="button-group" data-filter-group="<?php echo $list[1]->name; ?>">
                                         <?php
                                         foreach ($categories_child_ocasion as $key => $ocasion) {
@@ -331,8 +332,8 @@ class PLMasonicListo extends PageLinesSection {
                                     </div>
                                 </div>
                                 <div class="span2 listo-cat-cadre">
-                                    <?php $categories_child_cadre = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => 34)); ?>
-                                    <span class="center listo-category-header"><b><?php echo $list[0]->name; ?></b></span>
+                                    <?php $categories_child_cadre = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => $cadre_cat_ID)); ?>
+                                    <span class="listo-category-header"><b><?php echo $list[0]->name; ?></b></span>
                                     <div class="button-group" data-filter-group="<?php echo $list[0]->name; ?>">
                                         <?php
                                         foreach ($categories_child_cadre as $key => $cadre) {
@@ -344,15 +345,15 @@ class PLMasonicListo extends PageLinesSection {
                                     </div>
                                 </div>
                                 <div class="span2 listo-cat-season">
-                                    <?php $categories_child_season = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => 29)); ?>
-                                    <span class="center listo-category-header"><b><?php echo $list[3]->name; ?></b></span>
+                                    <?php $categories_child_season = get_categories( array('taxonomy'=> $filter_tax,'hide_empty' => 0, 'child_of' => $season_cat_ID)); ?>
+                                    <span class="listo-category-header"><b><?php echo $list[3]->name; ?></b></span>
                                     <div class="button-group" data-filter-group="<?php echo $list[3]->name; ?>">
                                         <?php
                                         foreach ($categories_child_season as $key => $season) {
                                             $cat_season_img_id = get_woocommerce_term_meta( $season->term_id, 'thumbnail_id', true );
                                             $img_link = wp_get_attachment_thumb_url( $cat_season_img_id );
-                                            echo '<li><a class="button-a" href="#" data-filter="'.$season->slug.'"><img title="'.$season->slug.'" src="'.$img_link.'" width="20" height="20"></a></li>';
-                                            //printf('<li><a class="button-a" href="#" data-filter=".%s"><img title="$season->slug" src="%s" width="20" height="20"></a></li>', $season->slug, $img_link );
+                                            //echo '<li><a class="button-a" href="#" data-filter="'.$season->slug.'"><img title="'.$season->slug.'" src="'.$img_link.'" width="20" height="20"></a></li>';
+                                            printf('<li><a class="button-a" href="#" data-filter=".%s"><img title="$season->slug" src="%s" width="20" height="20"></a></li>', $season->slug, $img_link );
                                         }
                                         ?>
                                     </div>
@@ -471,10 +472,7 @@ class PLMasonicListo extends PageLinesSection {
 
                 //	wp_reset_query();
             ?>
-                </div><!-- #collapseOne -->
-            </div><!-- .panel-default -->
-        </div><!-- #accordion -->
-                   <?php
+        <?php
 	}
 
 }

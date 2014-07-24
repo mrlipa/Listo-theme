@@ -25,3 +25,4 @@ add_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_
 add_action ( 'woocommerce_data_after_product_summary' , 'woocommerce_output_product_data_tabs', 10);
 add_action ( 'woocommerce_related_products_before_reviews', 'woocommerce_output_related_products', 10);
 
+?>

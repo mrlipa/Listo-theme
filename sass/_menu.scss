@@ -1,4 +1,13 @@
+//this is for navi bar - the old menu bar of pagelines plateform
 .section-navbar .navbar.pl-color-base{
   font-weight: bold;
   a{text-transform: uppercase;}
 }
+
+//this is for navi bar - the new menu bar of dms
+.section-navi .pl-nav > li > a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+

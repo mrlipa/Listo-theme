@@ -1,9 +1,15 @@
-/* line 1, ../sass/_menu.scss */
+/* line 2, ../sass/_menu.scss */
 .section-navbar .navbar.pl-color-base {
   font-weight: bold;
 }
-/* line 3, ../sass/_menu.scss */
+/* line 4, ../sass/_menu.scss */
 .section-navbar .navbar.pl-color-base a {
+  text-transform: uppercase;
+}
+
+/* line 8, ../sass/_menu.scss */
+.section-navi .pl-nav > li > a {
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -30,6 +36,7 @@
   width: 86%;
   border: 1px solid #B9B9B9;
   margin-bottom: 0;
+  font-family: Montserrat;
 }
 /* line 9, ../sass/_search.scss */
 .yith-ajaxsearchform-container input[type="submit"]#yith-searchsubmit {
@@ -49,57 +56,8 @@
 }
 
 /* line 22, ../sass/_search.scss */
-.modal-body {
-  text-align: center;
-  margin: auto;
-  width: 600px;
-  background: transparent;
-  padding: 0;
-}
-/* line 26, ../sass/_search.scss */
-.modal-body form {
-  padding: 0;
-}
-/* line 27, ../sass/_search.scss */
-.modal-body form > div {
-  margin: 0;
-  padding: 0;
-}
-/* line 31, ../sass/_search.scss */
-.modal-body .yith-ajaxsearchform-container input[type="search"]#yith-s {
-  width: 60%;
-  margin: 20px 0 0 0;
-}
-/* line 32, ../sass/_search.scss */
-.modal-body .yith-ajaxsearchform-container input[type="submit"]#yith-searchsubmit {
-  width: 10%;
-  margin: 20px 40px 0 0;
-}
-/* line 33, ../sass/_search.scss */
-.modal-body .yith-ajaxsearchform-container .autocomplete-suggestions {
-  text-align: center;
-  margin: -20px auto 0 auto;
-}
-
-/* line 37, ../sass/_search.scss */
 .widget_product_search input.searchfield {
   width: 400px;
-}
-
-/* line 39, ../sass/_search.scss */
-.modal, .modal-body {
-  background: transparent;
-  box-shadow: 0;
-  border: 0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-}
-
-/* line 45, ../sass/_search.scss */
-.modal {
-  top: 30%;
-  background-color: transparent;
-  border: 0;
 }
 
 /* line 51, ../sass/_search.scss */
@@ -132,53 +90,63 @@ li#yith_woocommerce_ajax_search-2.widget_product_search {
 
 /* line 18, ../sass/_woocommerce.scss */
 .woocommerce div.product .woocommerce-tabs ul.tabs li:before, .woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce #content div.product .woocommerce-tabs ul.tabs li:before, .woocommerce #content div.product .woocommerce-tabs ul.tabs li:after, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:before, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:after, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:before, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:after {
-  border: 0;
+  border: 3px;
 }
 
 /* line 22, ../sass/_woocommerce.scss */
+.woocommerce-tabs ul.tabs {
+  border-bottom: 1px solid #FAFAFA;
+}
+
+/* line 26, ../sass/_woocommerce.scss */
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active {
   background: #fafafa;
   z-index: 0;
   border-bottom-color: #fafafa;
 }
 
-/* line 28, ../sass/_woocommerce.scss */
+/* line 32, ../sass/_woocommerce.scss */
 .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page #content input.button.alt {
   background: #c3325f;
   color: #ffffff;
   text-shadow: 0;
 }
 
-/* line 34, ../sass/_woocommerce.scss */
+/* line 38, ../sass/_woocommerce.scss */
 .woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover {
   background: #c3325f;
   color: #ffffff;
   text-shadow: 0;
 }
 
-/* line 40, ../sass/_woocommerce.scss */
+/* line 44, ../sass/_woocommerce.scss */
 .woocommerce span.onsale, .woocommerce-page span.onsale {
   top: -95px;
   z-index: 1000;
   background: #c3325f;
 }
 
-/* line 46, ../sass/_woocommerce.scss */
+/* line 50, ../sass/_woocommerce.scss */
 .woocommerce .related ul li.product img, .woocommerce .related ul.products li.product img, .woocommerce-page .related ul li.product img, .woocommerce-page .related ul.products li.product img {
   max-width: 226px;
   max-height: 226px;
 }
 
-/* line 51, ../sass/_woocommerce.scss */
+/* line 55, ../sass/_woocommerce.scss */
 .woocommerce .woocommerce-product-rating .star-rating, .woocommerce-page .woocommerce-product-rating .star-rating {
   text-align: right;
   float: right;
 }
 
-/* line 53, ../sass/_woocommerce.scss */
+/* line 57, ../sass/_woocommerce.scss */
 .woocommerce-review-link {
   clear: right;
   display: block;
+}
+
+/* line 59, ../sass/_woocommerce.scss */
+.woocommerce .woocommerce-ordering select, .woocommerce-page .woocommerce-ordering select {
+  font-family: montserrat;
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -270,15 +238,11 @@ li.widget_product_categories .product-categories li:hover > .children {
   font-size: 25px;
   text-align: center;
 }
-/* line 10, ../sass/_buddypress.scss */
-#buddypress .woocommerce-tabs ul.tabs {
-  border-bottom: 1px solid #FAFAFA;
-}
-/* line 14, ../sass/_buddypress.scss */
+/* line 9, ../sass/_buddypress.scss */
 #buddypress div.item-list-tabs ul li {
   float: none;
 }
-/* line 18, ../sass/_buddypress.scss */
+/* line 13, ../sass/_buddypress.scss */
 #buddypress #item-nav ul {
   overflow: hidden;
   height: 100%;
@@ -287,65 +251,65 @@ li.widget_product_categories .product-categories li:hover > .children {
   padding: 0;
   z-index: 9999;
 }
-/* line 26, ../sass/_buddypress.scss */
+/* line 21, ../sass/_buddypress.scss */
 #buddypress a {
   color: grey;
 }
-/* line 29, ../sass/_buddypress.scss */
+/* line 24, ../sass/_buddypress.scss */
 #buddypress #item-nav li {
   border-top: 1px solid grey;
   margin-right: 10px;
 }
-/* line 30, ../sass/_buddypress.scss */
+/* line 25, ../sass/_buddypress.scss */
 #buddypress #item-nav li:last-Child {
   border-bottom: 1px solid grey;
 }
-/* line 32, ../sass/_buddypress.scss */
+/* line 27, ../sass/_buddypress.scss */
 #buddypress div.item-list-tabs#subnav {
   margin: 0px 0 10px;
   overflow: hidden;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
-/* line 35, ../sass/_buddypress.scss */
+/* line 30, ../sass/_buddypress.scss */
 #buddypress div.item-list-tabs#subnav li {
   float: left;
 }
-/* line 40, ../sass/_buddypress.scss */
+/* line 35, ../sass/_buddypress.scss */
 #buddypress #item-body {
   float: left;
   display: inline;
   width: 100%;
 }
-/* line 41, ../sass/_buddypress.scss */
+/* line 36, ../sass/_buddypress.scss */
 #buddypress #activity-filter-select {
   display: none;
 }
-/* line 42, ../sass/_buddypress.scss */
+/* line 37, ../sass/_buddypress.scss */
 #buddypress .submit {
   background: none;
   border: 0;
 }
-/* line 43, ../sass/_buddypress.scss */
+/* line 38, ../sass/_buddypress.scss */
 #buddypress #item-header-avatar img {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
 }
-/* line 49, ../sass/_buddypress.scss */
+/* line 44, ../sass/_buddypress.scss */
 #buddypress #signup_form .submit:active, #buddypress #account-delete-form .submit:active, #buddypress #profile-edit-form .submit:active {
   border: 0;
   box-shadow: none;
 }
-/* line 54, ../sass/_buddypress.scss */
+/* line 49, ../sass/_buddypress.scss */
 #buddypress #notifications-sort-order {
   display: none;
 }
-/* line 55, ../sass/_buddypress.scss */
+/* line 50, ../sass/_buddypress.scss */
 #buddypress #members-order-select {
   display: none;
 }
-/* line 57, ../sass/_buddypress.scss */
+/* line 52, ../sass/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-options {
   height: 50px  !important;
 }

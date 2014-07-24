@@ -5,7 +5,7 @@
   $color-yith: #B9B9B9;
   text-align: center;
   margin-bottom: 0;
-  input[type="search"]#yith-s{height:30px; width:86%; border: 1px solid #B9B9B9; margin-bottom: 0;}
+  input[type="search"]#yith-s{height:30px; width:86%; border: 1px solid #B9B9B9; margin-bottom: 0; font-family: Montserrat;}
   input[type="submit"]#yith-searchsubmit{
     height: 28px;
     width: 10%;
@@ -19,34 +19,34 @@
   .autocomplete-suggestions{text-align:center; margin: -20px auto 0 auto;}
 }
 
-.modal-body {
-  text-align:center;
-  margin: auto;
-  width: 600px;
-  form{padding:0;}
-  form>div{margin:0;padding:0;}
-  background: transparent;
-  padding:0;
-  .yith-ajaxsearchform-container {
-    input[type="search"]#yith-s{width:60%; margin:20px 0 0 0;}
-    input[type="submit"]#yith-searchsubmit{width:10%; margin:20px 40px 0 0;}
-    .autocomplete-suggestions{text-align:center; margin: -20px auto 0 auto;}
-  }
-}
-
 .widget_product_search input.searchfield{width: 400px; }
 
-.modal, .modal-body{
-  background:transparent;
-  box-shadow: 0;
-  border:0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;}
-.modal {
-  top: 30%;
-  background-color: transparent;
-  border: 0;
-}
+
+//.modal-body {
+//  text-align:center;
+//  margin: auto;
+//  width: 600px;
+//  form{padding:0;}
+//  form>div{margin:0;padding:0;}
+//  background: transparent;
+//  padding:0;
+//  .yith-ajaxsearchform-container {
+//    input[type="search"]#yith-s{width:60%; margin:20px 0 0 0;}
+//    input[type="submit"]#yith-searchsubmit{width:10%; margin:20px 40px 0 0;}
+//    .autocomplete-suggestions{text-align:center; margin: -20px auto 0 auto;}
+//  }
+//}
+//.modal, .modal-body{
+//  background:transparent;
+//  box-shadow: 0;
+//  border:0;
+//  -webkit-background-clip: padding-box;
+//  -moz-background-clip: padding-box;}
+//.modal {
+//  top: 30%;
+//  background-color: transparent;
+//  border: 0;
+//}
 
 li#yith_woocommerce_ajax_search-2.widget{margin-bottom:0;}
 li#yith_woocommerce_ajax_search-2.widget_product_search{height:45px;}
