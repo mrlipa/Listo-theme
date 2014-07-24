@@ -1,32 +1,5 @@
 <?php
 
-remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
-
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-remove_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);
-
-remove_action ( 'woocommerce_after_single_product_summary' , 'woocommerce_output_product_data_tabs', 10);
-remove_action ( 'woocommerce_after_single_product_summary' , 'hooked woocommerce_output_related_products', 20);
-
-add_action ( 'woocommerce_single_product_title_description', 'woocommerce_template_single_title', 5);
-add_action ( 'woocommerce_single_product_title_description', 'woocommerce_template_single_excerpt', 10 );
-
-add_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 5);
-add_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
-add_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
-add_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-add_action ( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);
-
-add_action ( 'woocommerce_data_after_product_summary' , 'woocommerce_output_product_data_tabs', 10);
-add_action ( 'woocommerce_related_products_before_reviews', 'woocommerce_output_related_products', 10);
-
-
-
 /**
  * Add the field to the checkout
  * https://gist.github.com/mikejolley/1604009
@@ -42,15 +15,15 @@ function my_custom_checkout_field( $checkout ) {
     echo '<div id="my_custom_listo_checkout_field"><h3>'.'Passenger information'.'</h3>';
 
     echo '<script language="javascript">
-            jQuery(document).ready(function(){
-                var formats = ["dd.mm.yy","dd.mm.yy"];
-                jQuery(".passeport_expiry_date_field").datepicker({
-                    changeMonth: true,
-                    changeYear: true,
-                    dateFormat:"dd.mm.yy",
-                });
+        jQuery(document).ready(function(){
+            var formats = ["dd.mm.yy","dd.mm.yy"];
+            jQuery(".passeport_expiry_date_field").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat:"dd.mm.yy",
             });
-        </script>';
+        });
+    </script>';
 
     woocommerce_form_field( 'my_nationality_field', array(
         'type'          => 'country',
@@ -133,8 +106,8 @@ function my_custom_checkout_field( $checkout ) {
 
 
 
- * Update the user meta with field value
- **/
+* Update the user meta with field value
+    **/
 add_action('woocommerce_checkout_update_user_meta', 'my_custom_checkout_field_update_user_meta');
 
 function my_custom_checkout_field_update_user_meta( $user_id ) {
@@ -221,12 +194,7 @@ function my_custom_checkout_field_update_order_meta( $order_id ) {
         if ($_POST['passanger_passport_field_5']) update_post_meta( $order_id, 'Passport Field 5', esc_attr($_POST['passanger_passport_field_5']));
         if ($_POST['passenger_expiry_field_5']) update_post_meta( $order_id, 'Expiry Field 5', esc_attr($_POST['passenger_expiry_field_5']));
     }
-
-
 }
-
-
-
 
 /**
  * Add the field to order emails
@@ -265,5 +233,7 @@ function my_custom_checkout_field_order_meta_keys( $keys ) {
     return $keys;
 }
 
+
+?>
 
 ?>

@@ -1,8 +1,10 @@
 #buddypress{
-  background:#FAFAFA;
+  background:ffffff;
   position:relative;
   z-index:2;
   #item-header{text-align:center;}
+
+  h2.user-nicename{font-size: 25px; text-align: center;}
 
   div.item-list-tabs ul li{
     float:none;
@@ -46,7 +48,6 @@
 
   #notifications-sort-order{ display:none; }
   #members-order-select{ display:none; }
-
 
   #whats-new-form #whats-new-options {height: 50px  !important;}
 

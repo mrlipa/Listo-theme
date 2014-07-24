@@ -8,7 +8,8 @@
 // Login and general
 include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/login.php');
 
-
+// Woocommerce
+include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/woocommerce/woocommerce_product_template.php');
 
 // Buddypress
 include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/buddypress/bp_nav_icons.php');
@@ -38,4 +39,6 @@ include_once(ABSPATH . 'wp-content/themes/Listo-theme/app/custom-post-types/plac
 //add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 //add_action()
-?>
+
+
+
