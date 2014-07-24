@@ -270,11 +270,15 @@ li.widget_product_categories .product-categories li:hover > .children {
   font-size: 25px;
   text-align: center;
 }
-/* line 9, ../sass/_buddypress.scss */
+/* line 10, ../sass/_buddypress.scss */
+#buddypress .woocommerce-tabs ul.tabs {
+  border-bottom: 1px solid #FAFAFA;
+}
+/* line 14, ../sass/_buddypress.scss */
 #buddypress div.item-list-tabs ul li {
   float: none;
 }
-/* line 13, ../sass/_buddypress.scss */
+/* line 18, ../sass/_buddypress.scss */
 #buddypress #item-nav ul {
   overflow: hidden;
   height: 100%;
@@ -283,65 +287,75 @@ li.widget_product_categories .product-categories li:hover > .children {
   padding: 0;
   z-index: 9999;
 }
-/* line 21, ../sass/_buddypress.scss */
+/* line 26, ../sass/_buddypress.scss */
 #buddypress a {
   color: grey;
 }
-/* line 24, ../sass/_buddypress.scss */
+/* line 29, ../sass/_buddypress.scss */
 #buddypress #item-nav li {
   border-top: 1px solid grey;
   margin-right: 10px;
 }
-/* line 25, ../sass/_buddypress.scss */
+/* line 30, ../sass/_buddypress.scss */
 #buddypress #item-nav li:last-Child {
   border-bottom: 1px solid grey;
 }
-/* line 27, ../sass/_buddypress.scss */
+/* line 32, ../sass/_buddypress.scss */
 #buddypress div.item-list-tabs#subnav {
   margin: 0px 0 10px;
   overflow: hidden;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
-/* line 30, ../sass/_buddypress.scss */
+/* line 35, ../sass/_buddypress.scss */
 #buddypress div.item-list-tabs#subnav li {
   float: left;
 }
-/* line 35, ../sass/_buddypress.scss */
+/* line 40, ../sass/_buddypress.scss */
 #buddypress #item-body {
   float: left;
   display: inline;
   width: 100%;
 }
-/* line 36, ../sass/_buddypress.scss */
+/* line 41, ../sass/_buddypress.scss */
 #buddypress #activity-filter-select {
   display: none;
 }
-/* line 37, ../sass/_buddypress.scss */
+/* line 42, ../sass/_buddypress.scss */
 #buddypress .submit {
   background: none;
   border: 0;
 }
-/* line 38, ../sass/_buddypress.scss */
+/* line 43, ../sass/_buddypress.scss */
 #buddypress #item-header-avatar img {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
 }
-/* line 44, ../sass/_buddypress.scss */
+/* line 49, ../sass/_buddypress.scss */
 #buddypress #signup_form .submit:active, #buddypress #account-delete-form .submit:active, #buddypress #profile-edit-form .submit:active {
   border: 0;
   box-shadow: none;
 }
-/* line 49, ../sass/_buddypress.scss */
+/* line 54, ../sass/_buddypress.scss */
 #buddypress #notifications-sort-order {
   display: none;
 }
-/* line 50, ../sass/_buddypress.scss */
+/* line 55, ../sass/_buddypress.scss */
 #buddypress #members-order-select {
   display: none;
 }
-/* line 52, ../sass/_buddypress.scss */
+/* line 57, ../sass/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-options {
   height: 50px  !important;
+}
+
+/* line 9, ../sass/listo-styles.scss */
+h1, h2, h3, h4, h5, h6, body {
+  font-family: Montserrat;
+}
+
+/* line 10, ../sass/listo-styles.scss */
+a {
+  color: grey;
 }
